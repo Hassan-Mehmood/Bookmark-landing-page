@@ -6,11 +6,13 @@ menuIcon.addEventListener("click", changeMenuState);
 function changeMenuState() {
   if (menuIcon.src.includes("/images/icon-hamburger.svg")) {
     menuIcon.src = "./images/icon-close.svg";
-    navLinks.classList.toggle("show-menu");
-    navLinks.classList.toggle("hide-menu");
+    navLinks.classList.add("show-menu");
+    navLinks.classList.remove("hide-menu");
   } else {
-    navLinks.classList.toggle("show-menu");
-    navLinks.classList.toggle("hide-menu");
+    navLinks.classList.remove("show-menu");
+    navLinks.classList.add("hide-menu");
     menuIcon.src = "./images/icon-hamburger.svg";
   }
+
+  navLinks.classList.remove("hide-menu");
 }

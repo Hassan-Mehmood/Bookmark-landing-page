@@ -135,6 +135,7 @@ a {
     background-color: hsla(229deg, 31%, 21%, 0.9);
     z-index: 1;
     padding-top: 104px;
+    visibility: hidden;
   }
   .header .nav-links a {
     color: #fff;
@@ -161,8 +162,35 @@ a {
   -webkit-animation: showMenu 200ms ease-out;
           animation: showMenu 200ms ease-out;
 }
-.header .nav-links.hide-menu {
-  -webkit-animation: hideMenu 200ms ease-in;
-          animation: hideMenu 200ms ease-in;
-  visibility: hidden;
+@media only screen and (max-width: 42.5em) {
+  .header .nav-links.hide-menu {
+    -webkit-animation: hideMenu 200ms ease-in;
+            animation: hideMenu 200ms ease-in;
+    visibility: hidden;
+  }
+}
+
+.hero-section .text-col {
+  padding-top: 3rem;
+  text-align: center;
+}
+.hero-section .text-col h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+.hero-section .text-col p {
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+.hero-section .text-col .cta-btn {
+  padding: 1rem 2rem;
+}
+.hero-section .text-col .colored-btn {
+  background-color: hsl(231deg, 69%, 60%);
+  color: #fff;
+}
+.hero-section .text-col .transparent-btn {
+  background: transparent;
+  color: hsl(229deg, 31%, 21%);
 }/*# sourceMappingURL=style.css.map */
