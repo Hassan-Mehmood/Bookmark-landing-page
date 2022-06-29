@@ -24,8 +24,24 @@ h4 {
   padding: 0;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .container {
   max-width: 68.75rem;
   margin: 0 auto;
-  width: 95%;
+  width: 88%;
+}
+
+.hide-for-desktop {
+  @include devices(tablet-up) {
+    display: none;
+  }
+}
+.hide-for-tablet {
+  @include devices(tablet-down) {
+    display: none;
+  }
 }

@@ -1,1 +1,70 @@
-  
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6rem;
+
+    .menu-icon,
+    .logo {
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+  .nav-links {
+    a {
+      color: $VeryDarkBlue;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+    .btn-nav {
+      color: #fff;
+      background-color: $SoftRed;
+      padding: 0.85rem 2.5rem;
+      border-radius: 3px;
+    }
+
+    @include devices(tablet-down) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: hsla(229, 31%, 21%, 0.9);
+      z-index: 1;
+      padding-top: 104px;
+      a {
+        color: #fff;
+        text-align: center;
+        padding: 1.5rem 0;
+        width: 88%;
+        max-width: 28.125rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+          margin-right: 0;
+        }
+        &:first-child {
+          border-top: 1px solid rgba(255, 255, 255, 0.233);
+        }
+        &:last-child {
+          margin-top: 1.5rem;
+          background-color: transparent;
+          border: 2px solid #fff;
+        }
+      }
+    }
+    &.show-menu {
+      visibility: visible;
+      animation: showMenu 200ms ease-out;
+    }
+    &.hide-menu {
+      animation: hideMenu 200ms ease-in;
+      visibility: hidden;
+    }
+  }
+}

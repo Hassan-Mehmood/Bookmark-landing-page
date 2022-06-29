@@ -1,0 +1,25 @@
+@keyframes showMenu {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 1%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes hideMenu {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
