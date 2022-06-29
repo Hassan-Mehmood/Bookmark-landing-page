@@ -17,12 +17,20 @@
       &:not(:last-child) {
         margin-right: 2rem;
       }
+      &:hover {
+        color: $SoftRed;
+      }
     }
     .btn-nav {
       color: #fff;
       background-color: $SoftRed;
       padding: 0.85rem 2.5rem;
+      border: 2px solid $SoftRed;
       border-radius: 3px;
+      &:hover {
+        color: $SoftRed;
+        background: transparent;
+      }
     }
 
     @include devices(tablet-down) {
