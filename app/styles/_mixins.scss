@@ -5,18 +5,13 @@
     }
   }
   @if $breakpoint == tablet-up {
-    @media only screen and (min-width: 42.5625em) {
+    @media only screen and (min-width: 48.5625em) {
       @content;
     }
   }
 
   @if $breakpoint == mobile {
     @media only screen and (max-width: 30.0625em) {
-      @content;
-    }
-  }
-  @if $breakpoint == btn-breankpoint {
-    @media only screen and (max-width: 48.5625em) {
       @content;
     }
   }
