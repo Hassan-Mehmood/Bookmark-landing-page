@@ -1,0 +1,53 @@
+.extension-top {
+  text-align: center;
+  margin-top: 8rem;
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    color: $GrayishBlue;
+    margin: 1rem auto 2rem;
+    padding: 0 1.25rem;
+    max-width: 55ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.extension-cards {
+  & > div {
+    margin-top: 1rem;
+  }
+}
+.card {
+  text-align: center;
+  padding: 2rem 0 1.25rem 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 70%;
+  max-width: 19.375rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    margin: 1.875rem auto;
+  }
+  h3 {
+    margin-bottom: 1rem;
+  }
+  .cta-btn {
+    background-color: $SoftBlue;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    &:focus,
+    &:hover {
+      background-color: #fff;
+      color: $SoftBlue;
+      border: 2px solid $SoftBlue;
+    }
+  }
+
+  @include devices(tablet-up) {
+    
+  }
+}

@@ -67,6 +67,7 @@
       margin-bottom: 2.8rem;
       img {
         max-width: 23.875rem;
+        width: 100%;
         margin: 0 auto;
       }
     }
@@ -89,7 +90,7 @@
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       justify-content: center;
-      gap: 4rem;
+      gap: 7.75rem;
       .col-1 {
         margin: 0;
         img {
@@ -98,9 +99,10 @@
       }
       .col-2 {
         text-align: left;
-        padding-right: 3rem;
+
         h2 {
           font-size: 2rem;
+          font-weight: 500;
         }
         p {
           padding: 0;
@@ -115,8 +117,12 @@
         }
       }
     }
+
+    &.hide {
+      display: none;
+    }
+    &.show {
+      display: grid;
+    }
   }
-}
-.hide {
-  display: none;
 }

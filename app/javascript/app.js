@@ -1,7 +1,9 @@
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
 const tabItems = document.querySelectorAll(".tab-item");
+const tabContent = document.querySelectorAll(".tab");
 
+// Navbar
 menuIcon.addEventListener("click", changeMenuState);
 function changeMenuState() {
   if (menuIcon.src.includes("/images/icon-hamburger.svg")) {
@@ -16,18 +18,30 @@ function changeMenuState() {
   navLinks.classList.remove("hide-menu");
 }
 
+//  Tab Section
 tabItems.forEach((item) => {
   return item.addEventListener("click", selectItem);
 });
 
 function selectItem() {
   removeBorder();
+  hideTabs();
 
   this.classList.add("active-border");
+  const tabContentItem = document.querySelector(`.${this.id}-content`);
+  console.log(tabContentItem);
+  tabContentItem.classList.add("show");
 }
 
 function removeBorder() {
   tabItems.forEach((item) => {
     item.classList.remove("active-border");
+  });
+}
+
+function hideTabs() {
+  tabContent.forEach((tab) => {
+    tab.classList.remove("show");
+    tab.classList.add("hide");
   });
 }

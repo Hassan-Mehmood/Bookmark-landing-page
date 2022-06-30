@@ -45,3 +45,10 @@ a {
     display: none;
   }
 }
+
+.hide {
+  display: none;
+  @include devices(tablet-up) {
+    display: none;
+  }
+}
