@@ -402,6 +402,11 @@ a {
 .extension-top h3 {
   font-size: 1.5rem;
 }
+@media only screen and (min-width: 48.5625em) {
+  .extension-top h3 {
+    font-size: 2rem;
+  }
+}
 .extension-top p {
   color: hsl(229deg, 8%, 60%);
   margin: 1rem auto 2rem;
@@ -414,12 +419,26 @@ a {
 .extension-cards > div {
   margin-top: 1rem;
 }
+@media only screen and (min-width: 48.5625em) {
+  .extension-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 60.625rem;
+    margin: 2rem auto;
+  }
+  .extension-cards .card-2 {
+    transform: translateY(10%);
+  }
+  .extension-cards .card-3 {
+    transform: translateY(20%);
+  }
+}
 
 .card {
   text-align: center;
-  padding: 2rem 0 1.25rem 0;
+  padding: 2rem 0.5rem 1.25rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  width: 70%;
+  width: 95%;
   max-width: 19.375rem;
   margin-left: auto;
   margin-right: auto;
@@ -429,6 +448,9 @@ a {
 }
 .card h3 {
   margin-bottom: 1rem;
+}
+.card p {
+  color: hsl(229deg, 8%, 60%);
 }
 .card .cta-btn {
   background-color: hsl(231deg, 69%, 60%);
