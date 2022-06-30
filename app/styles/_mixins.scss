@@ -15,4 +15,9 @@
       @content;
     }
   }
+  @if $breakpoint == btn-breankpoint {
+    @media only screen and (max-width: 48.5625em) {
+      @content;
+    }
+  }
 }

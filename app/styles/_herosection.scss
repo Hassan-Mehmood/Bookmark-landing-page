@@ -35,6 +35,11 @@
     }
   }
 
+  .img-col {
+    max-width: 418px;
+    margin: 0 auto;
+  }
+
   @include devices(tablet-up) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,7 +51,7 @@
       text-align: left;
 
       h2 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 4vw, 3rem);
         font-weight: 500;
       }
       .colored-btn {
@@ -55,10 +60,10 @@
     }
     .img-col {
       order: 2;
-      padding-left: 2rem;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      max-width: 38.625rem;
     }
   }
 }

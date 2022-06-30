@@ -213,6 +213,10 @@ a {
   color: rgb(37, 43, 70);
   background: transparent;
 }
+.hero-section .img-col {
+  max-width: 418px;
+  margin: 0 auto;
+}
 @media only screen and (min-width: 42.5625em) {
   .hero-section {
     display: grid;
@@ -226,7 +230,7 @@ a {
     text-align: left;
   }
   .hero-section .text-col h2 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 500;
   }
   .hero-section .text-col .colored-btn {
@@ -234,9 +238,24 @@ a {
   }
   .hero-section .img-col {
     order: 2;
-    padding-left: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    max-width: 38.625rem;
   }
+}
+
+.feature-section {
+  text-align: center;
+  margin-top: 8.125rem;
+}
+.feature-section h2 {
+  font-size: 2rem;
+}
+.feature-section p {
+  color: hsl(229deg, 8%, 60%);
+  margin: 1.375rem 0 2rem;
+  max-width: 45ch;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */

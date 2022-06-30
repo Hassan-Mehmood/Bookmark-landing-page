@@ -1,0 +1,14 @@
+.feature-section {
+  text-align: center;
+  margin-top: 8.125rem;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    color: $GrayishBlue;
+    margin: 1.375rem 0 2rem;
+    max-width: 45ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
