@@ -516,8 +516,15 @@ a {
 .accordion .question-4 button {
   border-bottom: 1px solid hsl(229deg, 8%, 60%);
 }
+.accordion .question-4 .accordion-collapse {
+  border-bottom: 1px solid hsl(229deg, 8%, 60%);
+}
 .accordion .accordion-question.open::after {
   transform: rotate(180deg);
+}
+.accordion .accordion-collapse {
+  padding: 1.5rem 0rem;
+  color: hsl(229deg, 8%, 60%);
 }
 .accordion .accordion-collapse.collapse {
   display: none;
@@ -525,7 +532,7 @@ a {
 .accordion .accordion-collapse.collapsing {
   height: 0;
   overflow: hidden;
-  transition: height 100ms ease;
+  transition: height 100ms ease-in-out;
 }
 .accordion .accordion-collapse.open {
   display: block;

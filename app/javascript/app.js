@@ -61,6 +61,7 @@ accordionButtons.forEach((button) => {
     } else {
       button.classList.remove("open");
       button.nextElementSibling.classList = "accordion-collapse collapsing ";
+
       setTimeout(() => {
         button.nextElementSibling.classList = "accordion-collapse collapse";
       }, 100);
