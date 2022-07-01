@@ -2,8 +2,10 @@ const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
 const tabItems = document.querySelectorAll(".tab-item");
 const tabContent = document.querySelectorAll(".tab");
+const accordionButtons = document.querySelectorAll(".accordion-question");
+//const accordionContent = document.querySelectorAll(".accordion-content");
 
-// Navbar
+// *Navbar
 menuIcon.addEventListener("click", changeMenuState);
 function changeMenuState() {
   if (menuIcon.src.includes("/images/icon-hamburger.svg")) {
@@ -18,7 +20,7 @@ function changeMenuState() {
   navLinks.classList.remove("hide-menu");
 }
 
-//  Tab Section
+// *Tab Section
 tabItems.forEach((item) => {
   return item.addEventListener("click", selectItem);
 });
@@ -45,3 +47,23 @@ function hideTabs() {
     tab.classList.add("hide");
   });
 }
+
+// *Accordion
+accordionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!button.classList.contains("open")) {
+      button.classList.add("open");
+      button.nextElementSibling.classList = "accordion-collapse collapsing";
+
+      setTimeout(() => {
+        button.nextElementSibling.classList = "accordion-collapse open";
+      }, 100);
+    } else {
+      button.classList.remove("open");
+      button.nextElementSibling.classList = "accordion-collapse collapsing ";
+      setTimeout(() => {
+        button.nextElementSibling.classList = "accordion-collapse collapse";
+      }, 100);
+    }
+  });
+});
