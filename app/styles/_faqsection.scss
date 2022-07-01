@@ -1,5 +1,6 @@
 .faq-wrapper {
   margin-top: 15rem;
+  text-align: center;
 }
 
 .faq-top {
@@ -80,5 +81,14 @@
     &.open {
       display: block;
     }
+  }
+
+  .accordion-btn {
+    background-color: $SoftBlue;
+    padding: 0.5rem 1rem;
+    font-family: $Rubik;
+    color: #fff;
+    margin: 2rem 0 8rem;
+    border-radius: 3px;
   }
 }
