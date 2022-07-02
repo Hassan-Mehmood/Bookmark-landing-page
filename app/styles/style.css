@@ -555,6 +555,11 @@ a {
   background-color: hsl(231deg, 69%, 60%);
   padding-top: 3.75rem;
 }
+.footer .blue-bg-wrapper > div {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer p:first-child {
   font-size: 14px;
   letter-spacing: 2px;
@@ -583,4 +588,75 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.footer button:hover {
+  background-color: #fff;
+  color: hsl(0deg, 94%, 66%);
+}
+@media only screen and (min-width: 48.5625em) {
+  .footer .email {
+    display: flex;
+    align-items: center;
+  }
+  .footer .email .input,
+.footer .email button {
+    margin: 0 0 3.5rem 0;
+  }
+  .footer .email .input {
+    flex: 2;
+  }
+  .footer .email button {
+    margin-left: 1rem;
+    flex: 1;
+  }
+}
+
+.black-bg-footer {
+  padding-top: 1.5rem;
+  background-color: rgb(37, 43, 70);
+  text-align: center;
+}
+.black-bg-footer .logo {
+  margin: 1rem auto;
+}
+.black-bg-footer .links {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.black-bg-footer .links a {
+  margin: 1rem 0;
+  color: hsl(229deg, 8%, 60%);
+}
+.black-bg-footer .links a:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+.black-bg-footer .social-links {
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+.black-bg-footer .social-links img {
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+@media only screen and (min-width: 48.5625em) {
+  .black-bg-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  .black-bg-footer .links {
+    flex-direction: row;
+    margin: 0;
+  }
+  .black-bg-footer .links img,
+.black-bg-footer .links a {
+    margin: 0 2rem 0 0;
+  }
+  .black-bg-footer .social-links {
+    margin: 0;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
